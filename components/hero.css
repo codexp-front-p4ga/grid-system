@@ -1,0 +1,40 @@
+.navbar-itens {
+    display: none;
+
+}
+header {
+    display: flex;
+    justify-content: space-around;
+} 
+.profile-picture {
+
+    max-height: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    border: 1px solid gray; 
+    background-color: gray; 
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+ 
+}
+
+
+
+
+@media screen and (min-width:768px ) {
+    
+}
+
+
+@media screen and (min-width:992px ) {
+    
+}
+
+@media screen and (min-width:1200px) {
+    
+}

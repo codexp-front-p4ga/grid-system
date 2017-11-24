@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<meta charset="utf-8">
+	<title>Sistema de grid</title>
+</head>
+<body>
+	<header></header>
+	<main></main>
+	<footer></footer>
+	
+<script type="text/javascript">
+	var cols = 12;
+    var gutter = 1.6;
+    var scw = (100 - (gutter * (cols - 1) )) / cols;
+	for (let i = 1; i <= cols; i++) {
+		let cw = (scw * i) + (gutter*(i-1))
+		console.log(".col-"+i+"{width:"+cw+"%;}");
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col {
+    float: left;
+}
+
+.col + .col {
+    margin-left: 1.6%;
+}
+
+.row::after, .row::before {
+    content: "";
+    display: flex;
+}
+
+.row::after {
+    clear: both;
+}
+
+.col-cl-1 {
+    width: 18.72%;
+}
+
+.col-cl-2 {
+    width: 39.04%;
+}
+
+.col-cl-3 {
+    width: 59.36%;
+}
+
+.col-cl-4 {
+    width: 79.67999999999999%;
+}
+
+.col-cl-5 {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .col-tb-1 {
+        width: 9.68888888888889%;
+    }
+
+    .col-tb-2 {
+        width: 20.97777777777778%;
+    }
+
+    .col-tb-3 {
+        width: 32.26666666666667%;
+    }
+
+    .col-tb-4 {
+        width: 43.55555555555556%;
+    }
+
+    .col-tb-5 {
+        width: 54.84444444444445%;
+    }
+
+    .col-tb-6 {
+        width: 66.13333333333334%;
+    }
+
+    .col-tb-7 {
+        width: 77.42222222222222%;
+    }
+
+    .col-tb-8 {
+        width: 88.71111111111112%;
+    }
+
+    .col-tb-9 {
+        width: 100.00000000000001%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .col-dk-1 {
+        width: 6.866666666666667%;
+    }
+
+    .col-dk-2 {
+        width: 15.333333333333334%;
+    }
+
+    .col-dk-3 {
+        width: 23.8%;
+    }
+
+    .col-dk-4 {
+        width: 32.266666666666666%;
+    }
+
+    .col-dk-5 {
+        width: 40.733333333333334%;
+    }
+
+    .col-dk-6 {
+        width: 49.2%;
+    }
+
+    .col-dk-7 {
+        width: 57.66666666666667%;
+    }
+
+    .col-dk-8 {
+        width: 66.13333333333334%;
+    }
+
+    .col-dk-9 {
+        width: 74.60000000000001%;
+    }
+
+    .col-dk-10 {
+        width: 83.06666666666668%;
+    }
+
+    .col-dk-11 {
+        width: 91.53333333333333%;
+    }
+
+    .col-dk-12 {
+        width: 100%;
+    }
+}
+
+/*
++------------------- Gerar cols -------------------+
+
+var cols = 12;
+var gutter = 1.6;
+var scw = (100 - (gutter * (cols - 1) )) / cols;
+
+for (let i = 1; i <= cols; i++) {
+    let cw = (scw * i) + (gutter*(i-1))
+    console.log(".col-"+i+"{width:"+cw+"%;}");
+}
+
+*/

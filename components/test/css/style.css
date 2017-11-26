@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    padding: 0; 
+    background-color: #FFF;
+    color: #9E9EA0;
+    font-family: sans-serif;
+}
+
+header, section, footer{
+    background: #EDEFEE;
+    display: flex;
+    justify-content: center;
+    padding: 60px 30px 30px 30px;
+}
+header{
+    padding-top: 30px; 
+}
+.container, .navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    height: 25px;
+}
+header ul {
+    display: none;
+}
+header ul li{
+    list-style: none;
+    cursor: pointer;
+    width: 100px;
+    height: 20px;
+    background: #9E9EA0;
+    margin-right: 10px;
+}
+header ul li:last-child {
+    margin-right: 0;
+}
+header h1 {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #DBDADF;
+    border-radius: 50px;
+}
+.menu-hamburger{
+    display:inline;
+    width: 60px;
+    height: 50px;      
+}
+.menu-hamburger div {
+    width: 100%;
+    height: 10px;
+    background: #DBDADF;  
+    margin: 0 0 10px 0;
+}
+.bg-white{
+    background: #FFF;
+}
+.feature{
+    flex-direction: column;
+}
+.feature h2{
+    margin: 30px 0 0 0;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    background: #9E9EA0;
+    width: 300px;
+}
+.feature p{
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-right: 0;
+}
+.feature img{
+    max-width:100%;
+    border-radius: 20px;
+    order: -1;
+}
+.galeria{
+    flex-wrap: wrap;
+}
+.galeria-item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-right: 0px;
+}
+.galeria-item:last-child{
+    padding-right: 0px;
+}
+.galeria-item h3{
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    background: #9E9EA0;
+    width: 200px;
+}
+.galeria-item p{
+    margin: 10px 0 40px 0;
+}
+.galeria-item img{
+    width: 100%;
+}
+footer{
+    background: #9E9EA0;
+}
+.footer{
+    flex-direction: column;
+}
+.footer ul{
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer ul li{
+    list-style: none;
+    cursor: pointer;
+    width: 50px;
+    height: 20px;
+    background: #DBDADF;
+    margin-right: 10px; 
+}
+.footer ul li:last-child{
+    margin-right: 0px; 
+}
+.footer ul li:hover{
+    background: #FFF;
+}
+.footer p{
+    width: 200px;
+    height: 20px;
+    background: #DBDADF;
+}
+
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+    
+    header ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    header ul li{
+        width: 80px; /* TABLET */
+    }
+    .container, .navbar{
+        width: 80%;
+        min-width: 650px;
+        max-width: 1000px;
+    }
+    .menu-hamburger{
+        display:none;
+    }
+    .feature{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .feature h2{
+        font-size: 1.2em;
+        margin: 0 20px 15px 0;
+    }
+    .feature p{
+        font-size: .9em;  /* TABLET */
+        margin: 0 20px 0 0;
+    }
+    .feature img{
+        max-width: 50%;  /* TABLET */
+        order: 0;
+    }
+    .feature .feature-text{
+        max-width: 50%;  /* TABLET */
+    }
+    .galeria-item{
+        max-width:46%;
+        padding-right: 20px;
+    }
+    .galeria-item:nth-child(even){  /* TABLET */
+        padding-right: 0px;
+    }
+    .galeria-item h3{
+        font-size: 1em;
+    }
+    .galeria-item p{
+        margin: 10px 0 20px 0;
+    }
+    .footer{
+        flex-direction: row;
+    }
+    .footer ul {
+        margin: 0;
+    }
+    .footer p {
+        order: -1;
+    }
+}
+
+@media only screen and (min-width: 998px) {
+    header ul li{
+        width: 100px; /* TABLET */
+    }
+    .feature p{
+        margin: 0 20px 0 0;
+    }
+    .galeria-item{
+        max-width:30%;
+        padding-right: 20px;
+    }
+    .galeria-item:nth-child(even){  /* TABLET */
+        padding-right: 20px;
+    }
+    .galeria-item:nth-child(3n+0){
+        padding-right: 0;
+    }
+            
+}
